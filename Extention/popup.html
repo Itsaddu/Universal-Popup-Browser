@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Popup Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Open Any Site</h2>
+    <p>Enter a URL below or use quick links.</p>
+    
+    <!-- Input for URL -->
+    <input type="text" id="urlInput" placeholder="https://example.com">
+    <button id="openPopup">Go!</button>
+    
+    <!-- Quick Links -->
+    <div id="quick-links">
+      <button class="quick-link whatsapp" data-url="https://web.whatsapp.com/">WhatsApp Web</button>
+      <button class="quick-link chatgpt" data-url="https://chat.openai.com/">ChatGPT</button>
+    </div>
+
+    <!-- Add Favorite Section -->
+    <h3>Add to Favorites</h3>
+    <input type="text" id="favTitle" placeholder="Site Name (e.g., GitHub)">
+    <input type="text" id="favUrl" placeholder="https://example.com">
+    <button id="addFavorite">Add</button>
+    
+    <!-- Favorite Sites List -->
+    <div id="favorites-list-container">
+      <h3>Your Favorite Sites</h3>
+      <div id="favorites-list"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
